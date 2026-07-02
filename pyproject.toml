@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paralleldropin-lstm"
+version = "0.1.0"
+description = "A fast parallel warm-start for torch.nn.LSTM: train an input-only LSTM in parallel with a dual-sign Heinsen scan, then transfer the weights to a standard nn.LSTM."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Matthew Tilley", email = "matthewtilley42@gmail.com"},
+]
+keywords = ["lstm", "rnn", "parallel-scan", "heinsen", "deep-learning", "pytorch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
