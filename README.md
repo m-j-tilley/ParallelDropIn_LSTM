@@ -10,6 +10,8 @@ is a first-order linear recurrence a scan evaluates in O(log T). That is exactly
 `W_hh = 0` case of a standard `torch.nn.LSTM`, so the trained input weights drop in with
 no conversion.
 
+(Project I've had on the backburner for a long while is to show that this idea is useful somehow.)
+
 ## Install
 
 ```bash
